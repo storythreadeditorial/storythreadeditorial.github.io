@@ -316,7 +316,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 280px;
+      aspect-ratio: 1 / 1;
     }
     .book-item:hover .book-item__cover {
       transform: translateY(-4px);
@@ -325,7 +325,8 @@
     .book-item__cover img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      object-position: top;
       display: block;
       transition: opacity 0.2s;
     }
@@ -761,16 +762,7 @@
   <div class="book-grid">
 
   <!-- Coming Soon items -->
-  <div class="book-item">
-    <a href="https://www.amazon.com/Reign-Deluxe-Bethan-Croome/dp/1464280665/" target="_blank" rel="noopener" class="book-item__cover">
-      <img src="https://static.wixstatic.com/media/58a6ec_1377ea0037344c33b4c47bf76c2d48ed~mv2.webp/v1/fill/w_187,h_187,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/coming-soon-sign-blue-door-hanger-announcement-board-vector-new-arrival-concept-eps-coming.webp" alt="Reign by Bethan Croome — Coming Soon" loading="lazy" />
-      <span class="book-item__badge">2026</span>
-    </a>
-    <p class="book-item__title">Reign</p>
-    <p class="book-item__meta">Bethan Croome<br>Cosmo Reads, Sourcebooks · Coming 2026</p>
-  </div>
-
-  <div class="book-item">
+    <div class="book-item">
     <div class="book-item__cover">
       <img src="https://static.wixstatic.com/media/58a6ec_1377ea0037344c33b4c47bf76c2d48ed~mv2.webp/v1/fill/w_187,h_187,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/coming-soon-sign-blue-door-hanger-announcement-board-vector-new-arrival-concept-eps-coming.webp" alt="58 Missions — Coming Soon" loading="lazy" />
       <span class="book-item__badge">2026</span>
@@ -789,6 +781,15 @@
   </div>
 
   <!-- Published: newest to oldest -->
+    <div class="book-item">
+    <a href="https://www.amazon.com/Reign-Deluxe-Bethan-Croome/dp/1464280665/" target="_blank" rel="noopener" class="book-item__cover">
+      <img src="Project Screenshots/Reign.png" alt="Reign by Bethan Croome" loading="lazy" />
+      <span class="book-item__badge">2026</span>
+    </a>
+    <p class="book-item__title">Reign</p>
+    <p class="book-item__meta">Bethan Croome<br>Cosmo Reads, Sourcebooks · Sept. 2026</p>
+  </div>
+    
   <div class="book-item">
     <a href="https://www.amazon.com/Farm-Windows-Joel-Summers/dp/1628064765/" target="_blank" rel="noopener" class="book-item__cover">
       <img src="Project%20Screenshots/Farm%20Windows.png" alt="Farm Windows by Joel Summers" loading="lazy" />
